@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:shizhanxiangmu/ui/pages/detail/detail.dart';
 import 'package:shizhanxiangmu/ui/pages/main/main.dart';
 import 'package:shizhanxiangmu/ui/pages/meal/meal.dart';
 class HYRouter{
@@ -7,7 +8,8 @@ class HYRouter{
   static final String inintialRouter =HYMainScreen.routeName;
   static final Map<String,WidgetBuilder> routes ={
     HYMainScreen.routeName:(ctx) =>HYMainScreen(),
-    HYMealScreen.routeName:(ctx)=>HYMealScreen()
+    HYMealScreen.routeName:(ctx)=>HYMealScreen(),
+    HYDetailScreen.routerName:(ctx)=>HYDetailScreen()
   };
   static final RouteFactory generateRoute =(settings){
     return null;

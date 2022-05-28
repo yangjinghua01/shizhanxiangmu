@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:shizhanxiangmu/ui/pages/home/home_drawer.dart';
 import 'package:shizhanxiangmu/ui/pages/main/initalize_items.dart';
 
 class HYMainScreen extends StatefulWidget {
@@ -14,6 +15,8 @@ class _HYMainScreenState extends State<HYMainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text("dasf"),),
+      drawer: HYHomeDrawer(),
       body: IndexedStack(
         index: _currentIndex,
         children: pages,

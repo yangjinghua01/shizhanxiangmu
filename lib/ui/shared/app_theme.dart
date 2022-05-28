@@ -14,7 +14,7 @@ class HYAppTheme{
   static final ThemeData norTheme = ThemeData(
     primarySwatch: Colors.pink, splashColor: Colors.transparent,
     //用来设置背景色
-    // canvasColor: Color.fromRGBO(255, 254, 222, 1),
+    canvasColor: Color.fromRGBO(255, 254, 222, 1),
     textTheme: TextTheme(
       bodyText1: TextStyle(fontSize: normalFontSize,color: norTextColors),
       headline1: TextStyle(fontSize: smallFontSize),
