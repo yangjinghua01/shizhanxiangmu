@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:shizhanxiangmu/core/router/route.dart';
+import 'package:shizhanxiangmu/core/viewmodel/meal_view_model.dart';
 import 'package:shizhanxiangmu/ui/shared/app_theme.dart';
 
+import 'core/services/meal_request.dart';
+
 void main() {
-  runApp(const MyApp());
+  runApp(ChangeNotifierProvider(
+      create:(ctx)=>MealViewModel(),
+    child: const MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
